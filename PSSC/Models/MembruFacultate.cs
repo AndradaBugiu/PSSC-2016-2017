@@ -8,15 +8,25 @@ namespace Models
 {
     class MembruFacultate
     {
-        public string nume_membru;
-        public string prenume_membru;
-        public Departament departament;
+        string nume_membru;
+        string prenume_membru;
 
-        public MembruFacultate(string nume_membru, string prenume_membru, Departament departament)
+        public string Nume_membru
+        {
+            get { return nume_membru; }
+            set { nume_membru = value; }
+        }
+
+        public string Prenume_membru
+        {
+            get { return prenume_membru; }
+            set { prenume_membru = value; }
+        }
+
+        public MembruFacultate(string nume_membru, string prenume_membru)
         {
             this.nume_membru = nume_membru;
             this.prenume_membru = prenume_membru;
-            this.departament = departament;
         }
     }
 }

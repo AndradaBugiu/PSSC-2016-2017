@@ -9,9 +9,8 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Models</RootNamespace>
     <AssemblyName>Models</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -40,16 +39,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Decanat.cs" />
-    <Compile Include="Disciplina.cs" />
-    <Compile Include="Facultate.cs" />
-    <Compile Include="MembruFacultate.cs" />
-    <Compile Include="Profesor.cs" />
+    <Compile Include="Deanship\IReportPublisher.cs" />
+    <Compile Include="Deanship\StudyYear.cs" />
+    <Compile Include="Generics\Attendence.cs" />
+    <Compile Include="Generics\Credits.cs" />
+    <Compile Include="Generics\Exceptions\InvalidCreditsValue.cs" />
+    <Compile Include="Generics\Grade.cs" />
+    <Compile Include="Generics\PlainText.cs" />
+    <Compile Include="Generics\Proportion.cs" />
+    <Compile Include="Generics\RegistrationNumber.cs" />
+    <Compile Include="Professor\Professor.cs" />
+    <Compile Include="Professor\Subjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Note.cs" />
-    <Compile Include="Situatie.cs" />
-    <Compile Include="Student.cs" />
+    <Compile Include="Student\GradeReport.cs" />
+    <Compile Include="Student\Student.cs" />
+    <Compile Include="Subject\EvaluationType.cs" />
+    <Compile Include="Subject\Subject.cs" />
+    <Compile Include="Subject\SubjectInformation.cs" />
+    <Compile Include="Subject\SubjectSituation.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

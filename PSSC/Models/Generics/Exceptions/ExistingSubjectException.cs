@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Models.Generics.Exceptions
 {
-    public class InvalidCreditsValue : Exception
+    class ExistingSubjectException: Exception
     {
-        public InvalidCreditsValue()
+        public ExistingSubjectException()
         {
 
         }

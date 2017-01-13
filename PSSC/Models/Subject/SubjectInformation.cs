@@ -1,11 +1,11 @@
 ﻿using Models.Generics;
+using System;
 
 namespace Models.Subject
 {
     public class SubjectInformation
     {
-        private string p;
-
+        public Guid Id;
         public PlainText Name { get; internal set; }
         public Credits Credits { get; internal set; }
         public Professor.Professor Professor { get; internal set; }
@@ -29,12 +29,6 @@ namespace Models.Subject
             : this(name, credits, type, activity)
         {
             Professor = professor;
-        }
-
-        public SubjectInformation(string p)
-        {
-            // TODO: Complete member initialization
-            this.p = p;
         }
 
         public void SetProfessor(Professor.Professor professor)

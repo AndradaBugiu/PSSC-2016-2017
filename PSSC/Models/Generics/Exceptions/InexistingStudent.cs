@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Models.Generics.Exceptions
 {
-    class MissingSubjectException:Exception
+    public class InexistingStudent:Exception
     {
-        public MissingSubjectException()
+        public InexistingStudent(String message) : base(message)
         {
-
+            
         }
     }
 }
